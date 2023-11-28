@@ -1,0 +1,49 @@
+html{
+    background-color: #f3eae3;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #70768f;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+}
+
+.productCard {
+    display: flex;
+    max-width: 720px;
+}
+
+.category {
+    letter-spacing: 4px;
+}
+
+button {
+    background-color: #3d8168;
+    color: white;
+    width: 15rem;
+    height: 3rem;
+}
+
+button:hover {
+    background-color: #1a4031;
+}
+
+.perfumePricetag {
+    color: #3d8168;
+    font-weight:bolder;
+    font-size: 1.7rem;
+    font-family: 'Fraunces', serif;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
