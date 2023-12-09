@@ -1,9 +1,26 @@
-html{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
     background-color: #f3eae3;
 }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 p {
-    font-size: 14px;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     color: #70768f;
 }
@@ -14,7 +31,42 @@ h1 {
 
 .productCard {
     display: flex;
-    max-width: 720px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid red;
+    max-width: 1080px;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.perfumeImage {
+    border-radius: 20px 0 0 20px;
+    border: 2px dashed blue;
+    width: 50%;
+    height: 620px;
+    object-fit: cover;
+}
+
+.perfumeText {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0;
+    border: 2px dotted black;
+    width: 50%;
+}
+
+.perfumePricetag {
+    color: #3d8168;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    font-family: 'Fraunces', serif;
+}
+
+.oldPricetag {
+    text-decoration: line-through;
 }
 
 .category {
@@ -25,25 +77,23 @@ button {
     background-color: #3d8168;
     color: white;
     width: 15rem;
-    height: 3rem;
+    height: 3.5em;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
 }
 
 button:hover {
     background-color: #1a4031;
 }
 
-.perfumePricetag {
-    color: #3d8168;
-    font-weight:bolder;
-    font-size: 1.7rem;
-    font-family: 'Fraunces', serif;
-}
+
 
 .attribution {
-    font-size: 11px; 
-    text-align: center; 
+    font-size: 11px;
+    text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
 }
